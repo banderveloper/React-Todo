@@ -1,4 +1,6 @@
 import './style/App.css';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faAdd, faTrash} from '@fortawesome/free-solid-svg-icons'
 
 function App() {
     return (
@@ -8,14 +10,24 @@ function App() {
                 <h1 className='title'>Todo App</h1>
 
                 <div className="add-block flex-between">
-                    <input className='add-input' type="text" />
-                    <button className='add-button'>+</button>
+                    <input className='add-input' type="text" placeholder='Add your new todo'/>
+                    <button className='add-button'>
+                        <FontAwesomeIcon icon={faAdd} className='white-icon fa-xl'/>
+                    </button>
                 </div>
 
                 <div className="todo-block">
                     <div className="todo flex-between">
-                        <p>todo text</p>
-                        <button>delete</button>
+                        <p className='todo-text'>todo text</p>
+                        <button className='remove-button'>
+                            <FontAwesomeIcon icon={faTrash} className='white-icon fa-xl'/>
+                        </button>
+                    </div>
+                    <div className="todo flex-between">
+                        <p className='todo-text'>todo text</p>
+                        <button className='remove-button'>
+                            <FontAwesomeIcon icon={faTrash} className='white-icon fa-xl'/>
+                        </button>
                     </div>
                 </div>
 
