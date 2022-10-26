@@ -9,7 +9,7 @@ const TodoRemoveButton = ({onClick}) => {
 
     return (
         <button className={classesJoined} onClick={onClick}>
-            <FontAwesomeIcon icon={faTrash} className='white-icon fa-xl'/>
+            <FontAwesomeIcon icon={faTrash} className='fa-xl'/>
         </button>
     );
 };

@@ -9,7 +9,7 @@ const TodoAddButton = ({onClick}) => {
 
     return (
         <button className={classesJoined} onClick={onClick}>
-            <FontAwesomeIcon icon={faAdd} className='white-icon fa-xl'/>
+            <FontAwesomeIcon icon={faAdd} className='fa-xl'/>
         </button>
     );
 };
