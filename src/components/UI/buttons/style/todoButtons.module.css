@@ -1,0 +1,37 @@
+.general {
+    transition: background-color 0.3s ease-out;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.add {
+    width: 50px;
+    height: 50px;
+    background-color: #8e49e9;
+}
+.add:hover {
+    background-color: #7526e0;
+}
+
+.remove {
+    width: 50px;
+    height: 50px;
+    background-color: #e74d3d;
+}
+.remove:hover {
+    background-color: #bb4235;
+}
+
+.clear {
+    width: 100px;
+    height: 50px;
+    background-color: #8e49e9;
+    font-size: 18px;
+}
+.clear:hover {
+    background-color: #7526e0;
+}
+
+

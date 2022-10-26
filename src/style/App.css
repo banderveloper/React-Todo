@@ -30,13 +30,7 @@ body {
     box-shadow: 0 11px 25px 1px rgba(0, 0, 0, 0.51);
 }
 
-.main-button{
-    transition: background-color 0.3s ease-out;
-    border: 0;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-}
+
 
 /* main block title Todo app */
 .main__title{
@@ -48,25 +42,6 @@ body {
 .todo-add-block{
     display: flex;
     margin-bottom: 30px;
-}
-.todo-add-input{
-    flex:1;
-
-    margin-right: 15px;
-    padding-left: 15px;
-
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    font-size: 16px;
-}
-.todo-add-button{
-    width: 50px;
-    height: 50px;
-
-    background-color: #8e49e9;
-}
-.todo-add-button:hover{
-    background-color: #7526e0;
 }
 
 /************* todo block *************/
@@ -89,15 +64,6 @@ body {
     padding: 10px;
     font-size: 20px;
 }
-.todo__remove-button{
-    width: 50px;
-    height: 50px;
-
-    background-color: #e74d3d;
-}
-.todo__remove-button:hover{
-    background-color: #bb4235;
-}
 
 
 /************* todo footer *************/
@@ -109,17 +75,5 @@ body {
 .todo-pending{
     flex: 1;
     font-size: 18px;
-}
-.todo-clear-button{
-    width: 100px;
-    height: 50px;
-
-    background-color: #8e49e9;
-
-    font-size: 18px;
-}
-
-.todo-clear-button:hover{
-    background-color: #7526e0;
 }
 

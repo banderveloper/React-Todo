@@ -1,14 +1,12 @@
 import React from 'react';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faAdd} from "@fortawesome/free-solid-svg-icons";
+import TodoAddButton from "./UI/buttons/TodoAddButton";
+import TodoInput from "./UI/inputs/TodoInput";
 
 const TodoAdd = () => {
     return (
         <div className="todo-add-block">
-            <input className='todo-add-input' type="text" placeholder='Add your new todo'/>
-            <button className='main-button todo-add-button'>
-                <FontAwesomeIcon icon={faAdd} className='white-icon fa-xl'/>
-            </button>
+            <TodoInput placeholder={'Add your new todo'}/>
+            <TodoAddButton/>
         </div>
     );
 };
