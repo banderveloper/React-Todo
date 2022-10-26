@@ -3,15 +3,11 @@ import TodoAdd from "./components/TodoAdd";
 import TodoBlock from "./components/TodoBlock";
 import TodoFooter from "./components/TodoFooter";
 import {useState} from "react";
+import useLocalStorage from "./hooks/useLocalStorage";
 
 function App() {
 
-    const [todos, setTodos] = useState([
-        {id: 'aaaaa', text: 'Buy a new gaming laptop'},
-        {id: 'aaaab', text: 'Complete a previous task'},
-        {id: 'aaaac', text: 'Create a video for youtube'},
-        {id: 'aaaad', text: 'Create a new portfolio site'}
-    ]);
+    const [todos, setTodos] = useState([]);
 
     function addTodo(todo) {
         setTodos([...todos, todo]);
@@ -19,6 +15,8 @@ function App() {
     function clearTodos(){
         setTodos([]);
     }
+
+    useLocalStorage(todos, setTodos);
 
     return (
 

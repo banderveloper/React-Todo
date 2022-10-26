@@ -5,7 +5,6 @@ const TodoItem = ({todo, removeTodo}) => {
 
     const [isHovering, setIsHovering] = useState(false);
 
-
     return (
         <div
             className="todo"
