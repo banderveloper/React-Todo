@@ -1,9 +1,13 @@
 import React from 'react';
 import classes from "./TodoInput.module.css";
 
-const TodoInput = ({placeholder}) => {
+const TodoInput = (props) => {
     return (
-        <input className={classes.addInput} type="text" placeholder={placeholder}/>
+        <input
+            className={classes.addInput}
+            type="text"
+            {...props}
+        />
     );
 };
 

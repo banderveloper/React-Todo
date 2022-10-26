@@ -1,14 +1,16 @@
 import React from 'react';
 import TodoItem from "./TodoItem";
 
-const TodoBlock = () => {
+const TodoBlock = ({todos}) => {
+
     return (
         <div className="todo-block">
 
-            <TodoItem text='Buy a new gaming laptop'/>
-            <TodoItem text='Complete a previous task'/>
-            <TodoItem text='Create a video for youtube'/>
-            <TodoItem text='Create a new portfolio site'/>
+            {
+                todos.map(todo=> (
+                    <TodoItem text={todo.text} key={todo.id}/>
+                ))
+            }
 
         </div>
     );

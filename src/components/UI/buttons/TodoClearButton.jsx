@@ -1,12 +1,12 @@
 import React from 'react';
 import classes from "./style/todoButtons.module.css";
 
-const TodoClearButton = () => {
+const TodoClearButton = ({onClick}) => {
 
     const classesJoined = [classes.general, classes.clear].join(' ');
 
     return (
-        <button className={classesJoined}>Clear all</button>
+        <button className={classesJoined} onClick={onClick}>Clear all</button>
     );
 };
 
