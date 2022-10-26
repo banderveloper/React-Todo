@@ -21,73 +21,105 @@ body {
     height: 100vh;
 }
 
+/* white main block */
 .main {
     width: 600px;
     background-color: white;
     border-radius: 10px;
     padding: 40px;
-    box-shadow: 0px 11px 25px 1px rgba(0, 0, 0, 0.51);
+    box-shadow: 0 11px 25px 1px rgba(0, 0, 0, 0.51);
 }
 
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title {
-    margin-bottom: 40px;
-}
-
-.add-block {
-    height: 50px;
-    margin-bottom: 20px;
-}
-
-.add-input {
-    height: 100%;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    font-size: 18px;
-    flex: 8;
-    margin-right: 10px;
-    padding-left: 10px;
-}
-
-.add-button {
-    height: 100%;
-    flex: 1;
-    background-color: #8e49e9;
+.main-button{
+    transition: background-color 0.3s ease-out;
     border: 0;
     border-radius: 5px;
+    color: white;
     cursor: pointer;
 }
 
-.white-icon{
-    color: white;
-}
-
-.todo-block{
+/* main block title Todo app */
+.main__title{
     margin-bottom: 30px;
 }
-.todo{
-    /*border: 1px solid black;*/
+
+/************* todo add block *************/
+
+.todo-add-block{
+    display: flex;
+    margin-bottom: 30px;
+}
+.todo-add-input{
+    flex:1;
+
+    margin-right: 15px;
+    padding-left: 15px;
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.todo-add-button{
+    width: 50px;
     height: 50px;
 
+    background-color: #8e49e9;
 }
-.todo-text{
-    flex: 8;
-    padding-left: 10px;
+.todo-add-button:hover{
+    background-color: #7526e0;
 }
 
-.remove-button{
-    flex: 1;
-    height: 100%;
+/************* todo block *************/
+
+.todo-block{
+    /*border: 1px solid red;*/
+    margin-bottom: 40px;
+}
+.todo{
+    display: flex;
+    align-items: center;
+    height: max-content;
+
+    margin-bottom: 10px;
+    /*border: 1px solid green;*/
+}
+.todo__text{
+    flex:1;
+    /*border: 1px solid blue;*/
+    padding: 10px;
+    font-size: 20px;
+}
+.todo__remove-button{
+    width: 50px;
+    height: 50px;
+
     background-color: #e74d3d;
-    border: 0;
-    border-radius: 5px;
+}
+.todo__remove-button:hover{
+    background-color: #bb4235;
 }
 
 
+/************* todo footer *************/
 
+.todo-footer-block{
+    display: flex;
+    align-items: center;
+}
+.todo-pending{
+    flex: 1;
+    font-size: 18px;
+}
+.todo-clear-button{
+    width: 100px;
+    height: 50px;
+
+    background-color: #8e49e9;
+
+    font-size: 18px;
+}
+
+.todo-clear-button:hover{
+    background-color: #7526e0;
+}
 
