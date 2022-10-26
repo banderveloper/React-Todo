@@ -14,7 +14,7 @@ body {
     background: linear-gradient(180deg, rgba(104, 231, 206, 1) 0%, rgba(104, 231, 206, 1) 0%, rgba(74, 127, 231, 1) 80%);
 }
 
-.container {
+#root {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,50 +30,56 @@ body {
     box-shadow: 0 11px 25px 1px rgba(0, 0, 0, 0.51);
 }
 
-
-
 /* main block title Todo app */
-.main__title{
+.main__title {
     margin-bottom: 30px;
 }
 
 /************* todo add block *************/
 
-.todo-add-block{
+.todo-add-block {
     display: flex;
     margin-bottom: 30px;
 }
 
 /************* todo block *************/
 
-.todo-block{
+.todo-block {
     /*border: 1px solid red;*/
     margin-bottom: 40px;
 }
-.todo{
+
+.todo {
     display: flex;
     align-items: center;
-    height: max-content;
-
     margin-bottom: 10px;
+
+    /*border: 1px solid red;*/
+}
+
+.todo__text {
+    flex: 1;
+    font-size: 20px;
+    margin: 13px 0;
+
     /*border: 1px solid green;*/
 }
-.todo__text{
-    flex:1;
-    /*border: 1px solid blue;*/
-    padding: 10px;
-    font-size: 20px;
-}
-
 
 /************* todo footer *************/
 
-.todo-footer-block{
+.todo-footer-block {
     display: flex;
     align-items: center;
 }
-.todo-pending{
+
+.todo-pending {
     flex: 1;
     font-size: 18px;
+}
+
+/**************************/
+
+.hidden {
+    display: none;
 }
 
