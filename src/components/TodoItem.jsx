@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import TodoRemoveButton from "./UI/buttons/TodoRemoveButton";
 
-const TodoItem = ({text}) => {
+const TodoItem = ({todo, removeTodo}) => {
 
     const [isHovering, setIsHovering] = useState(false);
+
 
     return (
         <div
@@ -11,9 +12,10 @@ const TodoItem = ({text}) => {
             onMouseOver={() => setIsHovering(true)}
             onMouseOut={() => setIsHovering(false)}
         >
-            <p className='todo__text'>{text}</p>
+            <p className='todo__text'>{todo.text}</p>
 
-            {isHovering && <TodoRemoveButton/>}
+            {isHovering &&
+                <TodoRemoveButton onClick={() => removeTodo(todo)}/>}
 
         </div>
     );
