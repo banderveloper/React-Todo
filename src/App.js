@@ -12,18 +12,20 @@ function App() {
     function addTodo(todo) {
         setTodos([...todos, todo]);
     }
-    function clearTodos(){
+    function clearTodos() {
         setTodos([]);
     }
 
     useLocalStorage(todos, setTodos);
+
+    document.title = 'Todo (' + todos.length + ')';
 
     return (
 
         <div className='main'>
             <h1 className='main__title'>Todo App</h1>
 
-            <TodoAdd addTodo={addTodo} />
+            <TodoAdd addTodo={addTodo}/>
             <TodoBlock todos={todos} setTodos={setTodos}/>
             <TodoFooter clearTodos={clearTodos} pending={todos.length}/>
         </div>
