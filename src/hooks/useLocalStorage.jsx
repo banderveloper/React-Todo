@@ -9,7 +9,7 @@ const useLocalStorage = (todos, setTodos) => {
             setTodos(JSON.parse(items));
         }
 
-    }, []);
+    }, [setTodos]);
 
     useEffect(()=>{
         localStorage.todos = JSON.stringify(todos);
