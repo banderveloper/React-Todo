@@ -2,13 +2,16 @@ import {useEffect} from 'react';
 
 const useLocalStorage = (todos, setTodos) => {
 
-    const items = localStorage.todos;
+    useEffect(()=>{
+        const items = localStorage.todos;
 
-    if (items !== '[]') {
-        setTodos(JSON.parse(items));
-    }
+        if(items !== '[]'){
+            setTodos(JSON.parse(items));
+        }
 
-    useEffect(() => {
+    }, []);
+
+    useEffect(()=>{
         localStorage.todos = JSON.stringify(todos);
     }, [todos]);
 
